@@ -1,0 +1,413 @@
+@font-face {
+font-family: 'Avenir LT Std 85 Heavy';
+src: url('../fonts/AvenirLTStd-Heavy.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Avenir LT Std 35 Light';
+src: url('../fonts/AvenirLTStd-Light.woff') format('woff');
+}
+
+html * {
+    width: 100%;
+}
+
+body {
+    font-family: 'Avenir LT Std 35 Light';
+    margin: 0;
+}
+
+header {
+    margin-bottom: -1%;
+}
+
+.content {
+    background-color: #fff;
+    margin-bottom: 70vh;
+    padding-bottom: 70vh;
+}
+
+.navigation, .heading, .btn {
+    position: absolute;
+    z-index: 1;
+}
+
+.navigation {
+    text-align: center;
+    height: 7vh;
+    padding-top: 3%;
+}
+
+.stickNav {
+    height: 2.7vh;
+    position: fixed;
+    text-align: center;
+    padding: 2% 0;
+    top: 0;
+    background-color: #000;
+    z-index: 999;
+    box-shadow: 1px -4px 26px #000;
+}
+
+nav span {
+    margin: 2%;
+}
+
+nav span a {
+    font-family: 'Avenir LT Std 85 Heavy';
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 0.5%;
+    letter-spacing: 3px;
+    border-bottom: 2px solid transparent;
+    transition: 0.4s;
+}
+
+nav span a:active, nav span a:hover {
+    color: #c6adf1;
+    border-bottom: 5px solid #582474;
+}
+
+.heading {
+    color: #fff;
+    text-align: center;
+    height: 30vh;
+    padding-top: 10%;
+    top: 12%;
+    transition: 0.5s;
+}
+
+.heading h2 {
+    font-size: 18px;
+    letter-spacing: 15px;
+    color: #fff;
+}
+
+.heading:hover h2 {
+    color: #ffe4c4;
+}
+
+.heading h1 {
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-size: 45px;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.heading:hover h1 {
+    color: #eee065;
+}
+
+.heading p {
+    font-size: 80%;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+.heading:hover p {
+    color: #d4d4d4;
+}
+
+.btn {
+    left: 40%;
+    top: 80%;
+    width: 20%;
+}
+
+.btn button {
+    font-family: 'Avenir LT Std 85 Heavy';
+    background-color: transparent;
+    padding: 2vh 15vh;
+    border: 2px solid white;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.btn button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.banner img {
+    height: 95vh;
+    object-fit: cover;
+    object-position: bottom;
+    filter: brightness(50%) contrast(1.1);
+    transition: 1s;
+}
+
+.banner img:hover {
+    filter: brightness(100%) contrast(1);
+}
+
+.about {
+    padding-top: 12%;
+}
+
+.about, .top3 {
+    text-align: center;
+}
+
+.about h3, .top3 h3, .text h3 {
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-size: 70%;
+    letter-spacing: 2px;
+    color: #8d1c06;
+}
+
+.about h1 {
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-size: 260%;
+    letter-spacing: 7px;
+}
+
+.about p {
+    letter-spacing: 1px;
+    color: #4b4b4b;
+}
+
+.top3 {
+    width: 70%;
+    margin-top: 12%;
+    background-color: #f2f2f2;
+    padding: 8% 15%;
+}
+
+.top3 h3 {
+    color: #298309;
+}
+
+.top3 h1 {
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-size: 260%;
+    letter-spacing: 3px;
+    border-bottom: 7px solid #298309;
+    width: 35%;
+    margin-left: 33%;
+}
+
+.flexbox {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.flex{
+    width: 20%;
+    padding: 5%;
+    margin-top: 5%;
+}
+
+.flex img {
+    transition: 1s;
+}
+
+.flex:hover img {
+    transform: scale(1.2);
+}
+
+.flex a {
+    text-decoration: none;
+}
+
+.flex h3 {
+    margin-top: 30%;
+    color: #8d1c06;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+.flex h1 {
+    width: 100%;
+    font-size: 100%;
+    margin-left: 0;
+    letter-spacing: 1px;
+    border-bottom: none;
+    color: #250b37;
+}
+
+#list {
+    margin-top: 0%;
+    padding-top: 15%;
+}
+
+.info {
+    position: relative;
+    z-index: 1;
+    height: 10vh;
+    width: 25%;
+    left: 25%;
+    margin-top: 5%;
+}
+
+.info img {
+    height: 35vh;
+    position: relative;
+    object-fit: cover;
+    object-position: top;
+}
+
+.text {
+    text-align: center;
+    position: relative;
+    margin-top: -2%;
+    padding: 12% 0;
+    background-color: #000;
+    display: inline-block;
+}
+
+.list-head {
+    text-align: center;
+    margin: -5% 0 15% 0;
+    font-family: 'Avenir LT Std 85 Heavy';
+}
+
+.list-head h1 {
+    letter-spacing: 3px;
+    border-bottom: 7px solid #8b0505;
+    width: 23%;
+    margin-left: 38%;
+}
+
+.list1, .list2, .list3, .list4, .list5{
+    transition: transform 5s ease-out;
+}
+
+.list1:hover, .list2:hover, .list3:hover, .list4:hover, .list5:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.list2, .list3, .list4, .list5 {
+    margin-top: 35%;
+}
+
+.text h3 {
+    color: #8b0505;
+    margin: 8% 0;
+}
+
+.text h1 {
+    width: 45%;
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-size: 140%;
+    letter-spacing: 3px;
+    border-bottom: 7px solid #8b0505;
+    margin-left: 27%;
+    color: #fff;
+}
+
+.image {
+    width: 40%;
+    position: relative;
+    z-index: 0;
+    height: 10vh;
+    left: 45%;
+}
+
+.image img {
+    width: 80%;
+    margin-top: -20%;
+    height: 70vh;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+footer {
+    margin-top: 30%;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: -1;
+}
+
+.footer-links {
+    width: 84%;
+    padding: 3% 5%;
+    background-color: #1a1a1a;
+    text-align: left;
+    margin: 0 3%;
+}
+
+.footer-msg {
+    display: inline-block;
+    width: 40%;
+    margin-right: 10%;
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-size: 240%;
+    color: #fff;
+}
+
+.exter-links {
+    width: 49%;
+    display: inline-block;
+}
+
+.links {
+    color: #fff;
+    display: inline-block;
+    width: 49%;
+    letter-spacing: 3px;
+    font-size: 80%;
+}
+
+.links hr {
+    width: 10%;
+    border: 2px solid gray;
+    margin-right: 76%;
+}
+
+ul .head {
+    font-family: 'Avenir LT Std 85 Heavy';
+    color: #9b8604;
+}
+
+li {
+    list-style-type: none;
+    margin-top: 6%;
+    padding: 1% 0%;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+    transition: border 0.3s ease-in-out;
+}
+
+li a:hover {
+    border-bottom: 1px solid #fff;
+}
+
+.copyright {
+    display: inline-flex;
+    width: 94%;
+    margin: 1% 4%;
+}
+
+.copy {
+    font-family: 'Avenir LT Std 85 Heavy';
+    font-size: 70%;
+    letter-spacing: 2px;
+    margin-top: 2.5%;
+}
+
+.logo {
+    width: 15%;
+}
+
+.policy {
+    text-align: right;
+    font-size: 60%;
+    letter-spacing: 3px;
+    margin-top: 2.5%;
+}
+
+.policy span {
+    font-family: 'Avenir LT Std 85 Heavy';
+    margin: 0 5%;
+}
+
+.policy span a {
+    text-decoration: none;
+    color: #000;
+}
